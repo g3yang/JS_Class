@@ -59,8 +59,20 @@ function reverse(str){
 // Ex [8, 5, 10, 1] => [1,5,8,10]
 function sort(arr){
     for(var i=0; i<arr.length-1; i++){
-            
+        for(var j=i+1; j<arr.length; j++){
+            if(arr[j]<arr[i]){
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
     }
+}
+
+function swap(a,b){
+    var temp = a;
+    a = b;
+    b = temp;
 }
 
 
@@ -108,4 +120,15 @@ function verify(expected,actual){
 })();
 
 
-console.log(sort([3,2,1]));
+(function test_sort(){
+    console.log('---------Test Sorting-----------');
+    var arr = [5,4,3,2,1];
+    sort(arr);
+    console.log(arr);
+
+    arr = [3,2,10,9];
+    sort(arr);
+    console.log(arr);
+
+ 
+})();
