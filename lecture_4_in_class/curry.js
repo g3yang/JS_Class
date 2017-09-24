@@ -7,15 +7,16 @@ function print(method, step, substep, result){
 
 var curryIt = function(uncurried) {
   var parameters = Array.prototype.slice.call(arguments, 1);
-  console.log(parameters);
-  return function() {
+  return function() { 
     return uncurried.apply(this, parameters.concat(
-      Array.prototype.slice.call(arguments, 0)
+      Array.prototype.slice.call(arguments)
     ));
   };
 };
 
 
-var printCrr = curryIt(print);
+var printCrr = curryIt(print, 'Job collectAttribution', 'Step 1');
 
-printCrr('Job collectAttribution')('compute sales')('total')(40);
+printCrr('Substep 1', 100);
+printCrr('Substep 2', 200);
+printCrr('Substep 4', 'Completed');
