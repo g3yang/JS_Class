@@ -4,3 +4,8 @@
  *   to a form of f(x)(y)
  */
 
+function f(x){
+    return function(y){
+        return x + 2*y;
+    }
+}

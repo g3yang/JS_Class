@@ -20,3 +20,7 @@ var printCrr = curryIt(print, 'Job collectAttribution', 'Step 1');
 printCrr('Substep 1', 100);
 printCrr('Substep 2', 200);
 printCrr('Substep 4', 'Completed');
+
+print('Job collectAttribution', 'Step 1','Substep 1', 100);
+print('Job collectAttribution', 'Step 1','Substep 2', 200);
+print('Job collectAttribution', 'Step 1','Substep 4', 'Completed');
