@@ -1,0 +1,20 @@
+This assignment you need to do a hard-core asyn node programming!
+
+Descriptions.
+
+1. Make a GET API call to retrieve all the posts: https://jsonplaceholder.typicode.com/posts
+2. Pay attention to the data structure. And you see that one user could have multiple posts.
+3. Save all the titles of posts into a file per user with file name user_{{id}}.txt.
+4. For example, for user 1, save the following into user_1.txt
+    title 1
+    title 2
+    .......
+5. You shall have 10 files created. 
+
+Hint:
+1. Setup your package.json in a new folder. Figure out the dependencies you need.
+2. Use request module to make API call. Look at https://www.npmjs.com/package/request
+3. Learn how to use fs to write a file. 
+4. Use async library to coordinate the tasks.
+5. Bonus:
+   If you have more time, implement it using promises. 

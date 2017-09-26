@@ -19,13 +19,34 @@ Array.prototype.map = function(fn){
     return res;
 }
 
-var arr = ['Toronto','Halifax','Vancouver'];
-arr.forEach(function(item){
-    console.log(item);
+/**
+Array.prototype.sort = function(fn){
+
+}
+*/
+
+
+var arr = [
+    {
+        name: 'Joe',
+        age: 40
+    },
+    {
+        name: 'John',
+        age: 20
+    },
+    {
+        name: 'Josh',
+        age: 30
+    }
+
+];
+
+var sorted = arr.sort(function(a,b){
+    return a.age > b.age;
 });
 
-var arr2 = [10,11,12];
-var arr2_sqt = arr2.map(function(x){
-    return x*x;
-});
-console.log(arr2_sqt);
+console.log(sorted);
+
+
+

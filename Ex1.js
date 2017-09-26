@@ -33,6 +33,8 @@ function reverse(str){
 
 }
 
+
+
 // (***) Sort an array with ascending order
 // Ex [8, 5, 10, 1] => [1,5,8,10]
 function sort(arr){
@@ -40,13 +42,24 @@ function sort(arr){
 }
 
 
+
 function repeat(str, num){
 
 }
 
 
+function findNumOccurances(str, searchStr){
+
+}
 
 
-(function test(){
 
+(function testOdd(){
+	console.log(isOdd(10)); // shall be false
+	console.log(isOdd(7));  // Shall be true
 })();
+
+(function testSort(){
+	console.log(sort([2,3,1])); // shall print [1,2,3]
+})();
+
