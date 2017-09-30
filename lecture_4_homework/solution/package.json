@@ -12,6 +12,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "lodash": "^4.17.4",
+    "promise": "^8.0.1",
     "request": "^2.83.0"
   }
 }
