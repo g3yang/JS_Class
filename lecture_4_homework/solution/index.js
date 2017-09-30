@@ -4,6 +4,8 @@ var _ = require('lodash');
 var async = require('async');
 var fs = require('fs');
 
+console.log('Hello World');
+
 function create_files(posts_by_users, callback){
     async.each(posts_by_users, function(posts_by_a_user){
         var fileName = posts_by_a_user.userId + '.txt';
