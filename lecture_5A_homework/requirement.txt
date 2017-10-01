@@ -1,0 +1,15 @@
+1. Register an account in GitHub.
+
+2. Checkin the simple-api source code(first class) to your repo! If you lost first class code, please refer to 'simple-api' folder. 
+Follow the Github instructions on how to create a repo.
+
+3.  Once you create your repo on Github, create a new branch to the following:
+
+A. Change the code using some ES 6 features
+B. Change the post '/students' endpoint to take one parameter called id,
+which is a number. If some one posts a student with existing ID, returns an error.
+C. Modify the Get '/students' to take one parameter 'sortBy'. It takes two values:
+'firstName' or 'lastName'. Return all students SORTED based on provided 'sortBy'.
+D. Create a new endpoint 'delete/:id' that deletes a student with the provided id.
+
+4. Use the git commands to practice the entire process.
