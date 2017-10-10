@@ -10,5 +10,9 @@ export default class Circle{
     getPerimeter(){
         return 2 * Math.PI * this.r;
     }
+
+    getRadius(){
+        return this.radius;
+    }
 }
 

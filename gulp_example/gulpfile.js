@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var babel = require('gulp-babel');
 
+
 gulp.task('es6',()=>{
     gulp.src('./src/**/*.js')
         .pipe(babel({

@@ -7,5 +7,12 @@ module.exports = {
         publicPath: '/bundles/',
         libraryTarget: 'var',
         library: 'ui'
+    },
+    module:{
+        loaders:[
+            { test: /\.js$/,
+              loader:'babel-loader'
+            }
+        ]
     }
 }

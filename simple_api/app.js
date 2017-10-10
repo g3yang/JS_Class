@@ -1,9 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var myLogger = require('./MyLogger');
 var app = express();
 let students = [];
 
-app.use(bodyParser());
+//app.use(bodyParser());
+
+app.use(myLogger);
+
 
 app.listen(8000, function(){
 	console.log('Server started!');
@@ -22,9 +26,7 @@ app.post('/students', (req, res)=>{
     let id = req.body.id;
     let firstName = req.body.firstName;
     let lastName = req.body.lastName;
-    let student = students.find(s=>{
-        return s.id == id
-    });
+    let student = students.find(s=>s.id == id);
     if(student){
         return res.send(400, 'The provided ID already exists');
     } else {
@@ -43,4 +45,10 @@ app.delete('/students/:id',(req,res)=>{
     let index = students.findIndex(s=> s.id == id);
     students.splice(index,1);
     return res.send();
-})
+});
+
+app.get('/students/:id',(req,res)=>{
+    let id = req.params.id;
+    let student = students.filter(s=>s.id==id);
+    return res.send(student);
+});
