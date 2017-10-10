@@ -1,11 +1,12 @@
 1. gulp
 
-Go through as much as you can in the following tutorial:
+    A. Review the in-class example in the gulp-example folder.
+    B. Go through(need to code on your own) as much as you can in the following tutorial:
 
 https://julienrenaux.fr/2014/05/25/introduction-to-gulp-js-with-practical-examples/
 
 
-2. Hapi + typescipt
+2. Hapi + typescipt(bonus)
 
 Follow this repo to setup and run the project:
 
