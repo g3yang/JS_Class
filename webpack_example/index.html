@@ -1,14 +1,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script type="text/javascript" src="bundle.js"></script>  
     </head>
 
     <body>
       <form> 
-            Radius: <input type ="text" name = "radius"> <br> 
-            Area: <input type = "text" name = "area"> <br><br>
-            <button onclick="ui.calculate()"> Calculate </button>
+          <div>
+            <h2> Circle </h2>  
+            Radius: <input type ="text" id = "radius"> <br> 
+            Area: <div id = "circleArea"> </div>
+            <input type="button" onclick="ui.getCircleArea()" value="Calculate"> 
+          </div>
+
+
+          <div>
+              <h2> Rectangle </h2>
+              Length:  <input type ="text" id = "len"> <br>
+              Width:  <input type ="text" id = "width"> <br>
+              Area: <div id = "rectArea"></div>
+              <input type="button" onclick="ui.getRectArea()" value="Calculate">
+          </div>
+
       </form>  
     </body>
 

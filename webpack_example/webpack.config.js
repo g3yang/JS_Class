@@ -1,18 +1,25 @@
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: './index.js',
     output: {
-        path:  __dirname,
+        path: path.join(__dirname,'dist'),
         filename: 'bundle.js',
         sourceMapFilename: "bundle.map",
-        publicPath: '/bundles/',
         libraryTarget: 'var',
         library: 'ui'
     },
     module:{
         loaders:[
             { test: /\.js$/,
-              loader:'babel-loader'
+              loader:'babel-loader',
             }
         ]
-    }
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        })
+    ]
 }
