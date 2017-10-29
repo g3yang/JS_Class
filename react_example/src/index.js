@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Timer from './Timer';
 import Menu from './Menu';
+import {BrowserRouter} from 'react-router-dom';
+import App from './components/app';
 
-const timer =  <Timer start={Date.now()} />;
-const menu = <Menu items={['BMW', 'Audi','Mercedes']} />; 
+
+
+
 ReactDOM.render( 
-    menu,
-    document.getElementById('app')
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
+    document.getElementById('root')
 );
 
 module.hot.accept();
