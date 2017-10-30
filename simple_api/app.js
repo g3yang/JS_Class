@@ -2,9 +2,25 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var myLogger = require('./MyLogger');
 var app = express();
-let students = [];
+let students = [{
+    firstName: 'Joe',
+    lastName: 'Smith',
+    email: 'joe.smith@mail.com',
+    id: 1,
+},{
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@mail.com',
+    id: 2 
+}];
 
-//app.use(bodyParser());
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
+});
+
+app.use(bodyParser());
 
 app.use(myLogger);
 
