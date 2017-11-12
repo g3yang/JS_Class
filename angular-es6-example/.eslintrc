@@ -1,0 +1,172 @@
+{
+  "plugins": ["angular"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "babel": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "angular": false,
+    "$": false
+  },
+  "rules": {
+    "angular/module-getter": 1,
+    "angular/module-setter": 1,
+    "angular/no-private-call": 1,
+    "angular/controller-as-route": 1,
+    "angular/controller-as-vm": 1,
+    "angular/controller-as": 0,
+    "angular/deferred": 1,
+    "angular/di-unused": 1,
+    "angular/directive-restrict": 1,
+    "angular/empty-controller": 1,
+    "angular/no-controller": 1,
+    "angular/no-inline-template": 1,
+    "angular/no-run-logic": 1,
+    "angular/no-services": 1,
+    "angular/no-cookiestore": 1,
+    "angular/no-directive-replace": 1,
+    "angular/on-watch": 1,
+    "angular/no-http-callback": 1,
+//    "angular/controller-name": 2,
+    "angular/directive-name": [2,"ci"],
+    "angular/di": 2,
+    "angular/di-order": 2,
+    "angular/function-type": [2,"named"],
+    "angular/no-service-method": 2,
+    "angular/rest-service": [2,"Restangular"],
+    "angular/watchers-execution": [2,"$apply"],
+    "angular/angularelement": 2,
+    "angular/window-service": 2,
+    "angular/timeout-service": 2,
+    "angular/no-jquery-angularelement": 2,
+    "angular/log": 2,
+    "angular/json-functions": 2,
+    "angular/interval-service": 2,
+    "angular/foreach": 2,
+    "angular/document-service": 2,
+    "angular/definedundefined": 2,
+    "no-bitwise": 2,
+    "camelcase": [
+      2,
+      {
+        "properties": "never"
+      }
+    ],
+    "curly": [
+      2,
+      "all"
+    ],
+    "eqeqeq": 2,
+    "guard-for-in": 2,
+    "no-extend-native": 2,
+    "wrap-iife": 2,
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-use-before-define": 0,
+    "new-cap": 2,
+    "no-caller": 2,
+    "no-empty": 2,
+    "no-irregular-whitespace": 2,
+    "no-new": 2,
+    "no-plusplus": 0,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-undef": 2,
+    "no-unused-vars": 0,
+    "strict": 0,
+    "max-params": [
+      2,
+      10
+    ],
+    "max-depth": [
+      2,
+      5
+    ],
+    "max-statements": [
+      2,
+      40
+    ],
+    "complexity": [
+      2,
+      8
+    ],
+    "max-len": [
+      2,
+      100
+    ],
+    "semi": 0,
+    "no-cond-assign": 0,
+    "no-debugger": 0,
+    "no-eq-null": 2,
+    "no-eval": 0,
+    "no-unused-expressions": 0,
+    "block-scoped-var": 0,
+    "no-iterator": 0,
+    "linebreak-style": 0,
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "no-loop-func": 2,
+    "no-multi-str": 2,
+    "valid-typeof": 0,
+    "no-proto": 0,
+    "no-script-url": 0,
+    "no-shadow": 2,
+    "dot-notation": 0,
+    "no-new-func": 0,
+    "no-new-wrappers": 0,
+    "no-invalid-this": 0,
+    "require-yield": 0,
+    "operator-linebreak": [
+      2,
+      "after"
+    ],
+    "no-mixed-spaces-and-tabs": 2,
+    "no-trailing-spaces": 2,
+    "space-unary-ops": [
+      2,
+      {
+        "nonwords": false,
+        "overrides": {}
+      }
+    ],
+    "keyword-spacing": [
+      2,
+      {}
+    ],
+    "space-infix-ops": 2,
+    "space-before-blocks": [
+      2,
+      "always"
+    ],
+    "eol-last": 2,
+    "array-bracket-spacing": [
+      2,
+      "never",
+      {
+        "singleValue": true
+      }
+    ],
+    "space-in-parens": [
+      2,
+      "never"
+    ],
+    "valid-jsdoc": 2,
+    "no-multiple-empty-lines": 2
+  }
+}
