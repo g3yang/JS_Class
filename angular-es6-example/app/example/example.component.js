@@ -5,8 +5,8 @@ let exampleComponent = {
   template: exampleHtml,
   controllerAs: 'example',
   controller: function(exampleService) {
-    const vm = this;
-    vm.title = exampleService.title();
+//    const vm = this;
+    this.title = exampleService.title();
   }
 
 }

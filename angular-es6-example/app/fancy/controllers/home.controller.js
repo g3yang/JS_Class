@@ -1,5 +1,5 @@
 function HomeCtrl() {
-    this.greeting = 'Greeting';
+    this.greeting = 'Welcome to my Angular App!';
 }
 
 export default HomeCtrl;
