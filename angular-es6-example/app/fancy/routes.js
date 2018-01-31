@@ -10,11 +10,8 @@ const routes = ($stateProvider, $urlRouterProvider)=>{
         })
         .state('home.list', {
           url: '/list',
-          templateUrl: 'app/fancy/views/home.list.html',
-          controller: function($scope){
-            $scope.dogs = ['Husky','Bernese','Sheppard'];
-            $scope.newDog='';
-          }
+          templateUrl: 'app/fancy/views/countries.html',
+          controller: 'CountriesCtrl as countriesCtrl'
         })
         .state('home.paragraph', {
           url: '/paragraph',

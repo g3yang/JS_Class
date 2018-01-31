@@ -1,0 +1,13 @@
+<div> 
+    <ul>
+        <li ng-repeat="country in countriesCtrl.countries">{{ country }}</li>
+    </ul>
+    <div class="formGroup">
+        <label for="newDog"> New Country: </label>
+        <input type="text" select-all-on-focus ng-model="countriesCtrl.newCountry"/>
+    </div>
+    <div class="formGroup">
+        <button type ="submit" select-all-on-focus ng-click="countriesCtrl.add()">Add</button>
+    </div>  
+        
+</div>
