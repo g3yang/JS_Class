@@ -1,3 +1,5 @@
+
+
 // (*) Determine if an number is an odd number
 function isOdd(num){
     return num%2==1;
