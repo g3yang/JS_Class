@@ -26,6 +26,12 @@ function sumOdds(arr){
 
 }
 
+// Check if a number is a prime number
+// Example: 2, 3, 5, 7, 11, 13 are prime numbers
+function isPrime(n){
+
+}
+
 
 // (***)  Reverse a string
 // Ex "abcd" => "dcab"
@@ -42,12 +48,14 @@ function sort(arr){
 }
 
 
-
+// Repeat the given string of n times
+// Ex ['hello',2]=>'hellohello'
 function repeat(str, num){
 
 }
 
-
+// Find the number of occurance of one string within another string
+// Ex ('as long as', 'as') =>2
 function findNumOccurances(str, searchStr){
 
 }
@@ -62,4 +70,3 @@ function findNumOccurances(str, searchStr){
 (function testSort(){
 	console.log(sort([2,3,1])); // shall print [1,2,3]
 })();
-
