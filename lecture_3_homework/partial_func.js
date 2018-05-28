@@ -5,7 +5,4 @@
  */
 
 function f(x){
-    return function(y){
-        return x + 2*y;
-    }
 }

@@ -3,13 +3,18 @@ function createCounter(){
     function prettyMessage(){
         return 'The current counter is '+ n;
     }
+
+    function increment(){
+        n+=1;
+    }
+
+    function getValue(){
+        return prettyMessage();
+    }
+
     return {
-        increment: function(){
-            n+=1;
-        },
-        getValue: function(){
-            return prettyMessage();
-        }
+        increment:increment,
+        getValue:getValue 
     };
 
 }

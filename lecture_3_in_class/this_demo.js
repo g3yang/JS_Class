@@ -1,29 +1,10 @@
-
-function f(){
-    console.log(this);
+function calcArea(){
+    return this.side * this.side;
 }
-
-
-
-var p = {
-    name: 'John',
-    langs: ['C++','C'],
-    speak: function(){
-        var self = this;
-        this.langs.forEach(function(lang){
-            console.log(self.name + ' knows '+ lang);
-        })
-    },
+var s1 = {
+    side: 10
 };
 
-var p2 = {
-    name: 'Nicolas',
-    langs:['C#','Javascript']
-};
+var area = calcArea.call(s1);
 
-function add(x, y){
-    console.log(this);
-    return x + y;
-}
-console.log(add.call(p2,1,2));
-console.log(add.apply(p2,[1,2]));
+console.log(area);
