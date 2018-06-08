@@ -1,8 +1,8 @@
-var module = require('./module');
+var homework = require('./homework');
 
 describe('Test palindrom',()=>{
     it('A simgle character',()=>{
-        expect(module.isPalindrome('a')).toEqual(true);
+        expect(homework.isPalindrome('a')).toEqual(true);
     })
     /**
      * Add more testcases

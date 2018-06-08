@@ -1,32 +1,33 @@
 var Promise = require('Bluebird');
 var request = require('request');
 
+function getRandInt(){
+    return Math.floor(Math.random()*100);
+}
+
 function getA(){
     return new Promise(function(resolve,reject){
         setTimeout(function(){
-            var r = Math.random();
-            if(r>0.0){
-                resolve(100);
-            }else{
-                reject('Failed processing');
-            }
+           var a = getRandInt();
+           console.log(`A: ${a}`);
+           resolve(a);
         }, 3000);
     })
 }
 
+function getB(){
+    return new Promise((resolve,reject)=>{
+        var b = getRandInt();
+        console.log(`B: ${b}`);
+        resolve(b);
+    });
+}
 
-var p = getA();
-p.then(function(res){
-  return new Promise(function(resolve, reject){
-    setTimeout(function(){
-        resolve(2*res);
-    },100)
-  });  
-}).then(function(res){
-    console.log(res);
-});
 
-console.log('HERE');
+Promise.all([getA(), getB()]).then(values=>{
+    console.log(`A + B: ${values[0]+values[1]}`);
+}, err=>{})
+
 
 /**
 console.log('Hello world');
