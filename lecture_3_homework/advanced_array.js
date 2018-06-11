@@ -9,6 +9,7 @@ function isPrime(){
 // Ex [1, 3, -10, -1] => 4
 // ***
 function sumAllPositive(arr){
+    
 
 }
 

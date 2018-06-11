@@ -1,0 +1,17 @@
+{
+  "name": "lecture_5_in_class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "promise": "^8.0.1",
+    "request": "^2.87.0"
+  }
+}
