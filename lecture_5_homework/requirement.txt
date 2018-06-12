@@ -15,6 +15,4 @@ Hint:
 1. Setup your package.json in a new folder. Figure out the dependencies you need.
 2. Use request module to make API call. Look at https://www.npmjs.com/package/request
 3. Learn how to use fs to write a file. 
-4. Use async library to coordinate the tasks.
-5. Bonus:
-   If you have more time, implement it using promises. 
+4. Use promises to accomplish this task.
