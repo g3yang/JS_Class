@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    var a = parseInt($("#a").val());
+                    var b = parseInt($("#b").val());
+                    $("#sum").text(a+b);
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <label> Enter value A: </label>
+            <input type="text" id="a"/>
+        </div>
+        <div>
+            <label> Enter value B: </label>
+            <input type="text" id="b"/>
+        </div>
+        <div id="sum"> 
+        </div>
+        <div>
+            <button id="btn">Sum</button>
+        </div>
+    </body>
+</html>

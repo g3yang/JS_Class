@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+        </style>
+        <script>
+            function sum(){
+                var aStr = document.getElementById("a").value;
+                var bStr = document.getElementById("b").value;
+                document.getElementById("sum").innerText= parseInt(aStr) + parseInt(bStr);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <label> Enter value A: </label>
+            <input type="text" id="a"/>
+        </div>
+        <div>
+            <label> Enter value B: </label>
+            <input type="text" id="b"/>
+        </div>
+        <div id="sum"> 
+        </div>
+        <div>
+            <button onclick="sum()">Sum</button>
+        </div>
+    </body>
+</html>

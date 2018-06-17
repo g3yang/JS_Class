@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <style>
+            #container {
+                width: 400px;
+                height: 400px;
+                background: yellow;
+                position: relative;
+            }
+            #animate {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: red;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    var intervalId = setInterval(move,10);
+                    function move(){
+                        var pos = $("#animate").position();
+                        if(pos.left<=350){
+                            $("#animate").css({
+                                top: pos.top + 1 + "px",
+                                left: pos.left + 1 + "px"
+                            });
+                        } else{
+                            clearInterval(intervalId);
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            <button id="btn">Click Me</button>
+        </p> 
+
+        <div id ="container">
+            <div id ="animate"></div>
+        </div>
+    </body>
+
+</html>
